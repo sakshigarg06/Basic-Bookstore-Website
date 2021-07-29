@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Wisdom Books</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body>
+
+	<div style="text-align: center; background-color: #262626; color: white; padding: 5px; font-family: montserrat; left: 0px; font-size: 15px; width: 100%; height: auto; box-sizing: border-box; position: absolute; top: 0px;">Free Shipping for orders over ₹ 999.00!</div><br><br><br>
+
+<div style="margin: auto;">
+	<a href="index.html"><img src="https://cdn.dribbble.com/users/963371/screenshots/3994727/w-logo.png" alt="" style="width: 60px; height: 60px; margin-left: 20px; float: left;"></a>
+	<a href="index.html"><h1 style="font-family: montserrat; position: relative; top: -9px; float: left; color: black;">&ensp;WISDOM BOOKS&emsp;&emsp;</h1></a>
+	<form class="search">
+	<input type="text" placeholder="Search..">
+	<button onclick="location.href='index.html'"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -60px; bottom: -18px;"><b><a href="index.html" style="text-decoration: none; color: black;">HOME</a></b></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -90px; bottom: -18px;"><b><a href="#about" style="text-decoration: none; color: black;">ABOUT</a></b></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -115px; bottom: -18px;"><b><a href="#contact" style="text-decoration: none; color: black;">CONTACT</a></b></div>
+<br><br><br><br><br><br><br>
+<div style="font-family: montserrat;">
+	<div align="center"><span style="background: #99C6E9; padding: 15px 60px;font-size: 35px; border-radius: 40px;"><b>Fill in your details below:</b></span></div><br><br>
+	<form class="form" onsubmit="return payment();">
+		<table align="center" style="border-spacing: 150px 0px;">
+			<tr align="center">
+				<td>
+					<p>First Name:</p><br>
+					<input type="text" name="" required placeholder="Enter Your First Name" id="firstname" onblur="validatefirstname();">
+				</td>
+				<td>
+					<p>Last Name:</p><br>
+					<input type="text" name="" required placeholder="Enter Your Last Name" id="lastname" onblur="validatelastname();">
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<p>Birthday:</p><br>
+					<input type="date" required>
+				</td>
+				<td>
+					<p>Gender:</p>
+					<input type="radio" name="gender">Male <br>
+       	            <input type="radio" name="gender">Female<br>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<p>Mobile Number:</p>
+					<input type="text" name="" required placeholder="Enter Your Mobile Number" id="mobileno" onblur="validatemobileno();">
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<p>Email ID:</p>
+					<input type="email" name="" required placeholder="Enter Your Email" id="email" onblur="validateemail();">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p align="center">Address:</p>
+					<input type="text" name="" required placeholder="House No. / Building No.">
+					<input type="text" name="" required placeholder="Area / Street Name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="" required placeholder="City">
+				</td>
+				<td>
+					<input type="text" name="" required placeholder="District">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="" required placeholder="State">
+				</td>
+				<td>
+					<input type="text" name="" required placeholder="Country">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="" required placeholder="Pin Code / Zip Code" id="code" onblur="validatecode();">
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2"><input type="checkbox" name="" id="checkbox" required><b style="font-size: 20px; color: red;">&ensp;Agree with all terms and conditions.</b></td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<input type="submit" name="" value="PROCEED TO PAY">
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+<div style="clear: both;"></div><br>
+
+<div id="about" style="font-family: montserrat; clear: both; padding: 20px;">
+	<div align="center"><h1 style="font-size: 40px;">ABOUT US</h1></div>
+	<p style="font-size: 22px;" align="center">Wisdom Books is one of the largest trusted sites for buying books.</p>
+	<div align="center">
+	<div id="box" style="float: left;">
+	    <i class="fa fas fa-users" style="font-size: 45px;"></i>
+		<h1>2 Million</h1>
+		<h3>Our Customers</h3>
+	</div>
+	<div id="box" style="float: left;">
+		<i class="fa fa-book" style="font-size: 45px;"></i>
+		<h1>4.2 Billion</h1>
+		<h3>Book Collections</h3>
+	</div>
+	<div id="box" style="float: left;">
+		<i class="fa fas fa-comments" style="font-size: 45px;"></i>
+		<h1>1.3 Million</h1>
+		<h3>Our Reviews</h3>
+	</div>
+	<div style="clear: both;"></div>
+</div>
+</div><br><br>
+
+<div id="contact" style="clear: both; background-color: black; color: white; font-family: montserrat; padding: 15px 20px;">
+	<div align="center"><h1 style="font-size: 40px;">CONTACT US</h1></div><br><br>
+    <div>
+	<table style="border-spacing: 130px 0px;">
+     <tr>
+         <td align="center">
+            <i class="fa fas fa-map-marker" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">Visit Us</h3>
+            Wisdom Books<br>ABC Road,<br>Chandigarh (160091)<br>India 
+         </td>
+         <td align="center">
+            <i class="fa fas fa-phone" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">Call Us</h3>
+            0172-123-456<br>98765-43210 
+         </td>
+         <td align="center">
+            <i class="fa fas fa-envelope-open" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">For Any Queries</h3>
+            queries@wisdombooks.com 
+         </td>
+         <td align="center" id="social">
+            <i class="fa fa-facebook"></i><br>
+            <i class="fa fa-instagram"></i><br>
+            <i class="fa fa-twitter"></i>
+         </td>
+     </tr>   
+    </table>
+</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>

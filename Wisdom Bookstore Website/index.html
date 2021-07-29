@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Wisdom Books</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="hello()">
+
+	<div style="text-align: center; background-color: #262626; color: white; padding: 5px; font-family: montserrat; left: 0px; font-size: 15px; width: 100%; height: auto; box-sizing: border-box; position: absolute; top: 0px;">Free Shipping for orders over ₹ 999.00!</div><br>
+
+	<div align="center" style="clear: both;"><em><h3 style="font-family: montserrat; font-size: 25px;" id="hello"></h3></em></div>
+
+<div style="margin: auto;">
+	<a href="index.html"><img src="https://cdn.dribbble.com/users/963371/screenshots/3994727/w-logo.png" alt="" style="width: 60px; height: 60px; margin-left: 20px; float: left;"></a>
+	<a href="index.html"><h1 style="font-family: montserrat; position: relative; top: -9px; float: left; color: black;">&ensp;WISDOM BOOKS&emsp;&emsp;</h1></a>
+	<form class="search">
+	<input type="text" placeholder="Search..">
+	<button onclick="location.href='index.html'"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<div style="font-size: 20px; font-family: montserrat; position: relative; bottom: -15px; right: -10px; float: left;"><b>GENRE</b>
+<div id="dropdown" style="position: relative;display: inline-block;">
+  <button style="background-color: white; color: black;border: none;font-size: 20px; cursor: pointer;"><i class="fa fa-chevron-down"></i></button>
+  <div style="position: absolute;background-color: #f9f9f9; width: 125px; box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); left: -40px;"id="dropdown-content">
+  <a href="#g1">Fiction</a>
+  <a href="#g2">Thriller & Mystery</a>
+  <a href="#g3">Comics & Graphic Novels</a>
+  <a href="#g4">Self-Help Books</a>
+  </div>
+</div></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -25px; bottom: -15px;"><b><a href="index.html" style="text-decoration: none; color: black;">HOME</a></b></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -45px; bottom: -15px;"><b><a href="#about" style="text-decoration: none; color: black;">ABOUT</a></b></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -60px; bottom: -15px;"><b><a href="#contact" style="text-decoration: none; color: black;">CONTACT</a></b></div>
+
+<br><br><br>
+
+<div>
+	<img src="https://www.imindq.com/Portals/0/EasyDNNnews/273/img-book-mind-mapping.jpg" alt="books" style="width: 100%; height:420px;">
+	<div><p style="font-size: 31px; position:absolute; top:270px; color: white;"><em>&nbsp;“Books were my pass to personal freedom.<br>
+		&nbsp;I learned to read at age three, and there discovered<br> &nbsp;was a whole 
+		world to conquer that went beyond<br> &nbsp;our farm in Mississippi.”</em><br><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;— Oprah Winfrey</b></p></div>
+</div>
+
+<table id="table1" border="1" style="background-color: #e1e1e1; position: relative; top: -4px; box-shadow: 0px 5px 10px 0px; color: black;">
+	<tr>
+		<th style="font-size: 28px;"><i class=" fa fas fa-truck" style="font-size: 35px;"></i>&ensp;Fast Delivery</th>
+		<th style="font-size: 28px;"><i class=" fa fas fa-tags" style="font-size: 35px;"></i>&ensp;Best Deals</th>
+		<th style="font-size: 28px;"><i class=" fa fas fa-gift" style="font-size: 35px;"></i>&ensp;Gift Wrap</th>
+		<th style="font-size: 28px;"><i class=" fa fas fa-lock" style="font-size: 35px;"></i>&ensp;Secured Payment</th>
+	</tr>
+</table><br><br>
+
+<fieldset style="border-radius: 15px;">
+	<legend><h1 style="font-size: 35px; font-family: sans-serif; color: black;" id="g1"><em>&nbsp;FICTION&nbsp;</em></h1></legend>
+
+
+    <div>
+    		<div class="book" style="margin-left: 20px;">
+    			<img src="https://images-na.ssl-images-amazon.com/images/I/41EmGYdoPOL._SX308_BO1,204,203,200_.jpg" alt="" class="book-image">
+    			<div class="book-name">The Alchemist <a href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 240.00</div>
+    		    <div class="quantity"><select name="copies" id="qty1">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    		
+    		<div class="book"><img src="https://rukminim1.flixcart.com/image/416/416/jp02t8w0/book/6/7/8/the-fault-in-our-stars-original-imafbckyytjhwegf.jpeg?q=70" alt="" class="book-image">
+    			<div class="book-name">The Fault In Our <br>Stars <a href="https://en.wikipedia.org/wiki/The_Fault_in_Our_Stars" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 260.00</div>
+    		    <div class="quantity"><select name="copies" id="qty2">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/51DA1hQNnJL._SX324_BO1,204,203,200_.jpg" alt="" class="book-image">
+    			<div class="book-name">A Game Of <br>Thrones <a href="https://en.wikipedia.org/wiki/A_Game_of_Thrones" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 360.00</div>
+    		    <div class="quantity"><select name="copies" id="qty3">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557077508l/44581535.jpg" alt="" class="book-image">
+    			<div class="book-name">Find Me <a href="https://en.wikipedia.org/wiki/Find_Me_(novel)" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 360.00</div>
+    		    <div class="quantity"><select name="copies" id="qty4">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172.jpg" alt="" class="book-image">
+    			<div class="book-name">The Testaments <a href="https://en.wikipedia.org/wiki/The_Testaments" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 540.00</div>
+    		    <div class="quantity"><select name="copies" id="qty5">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    </div>
+</fieldset><br><br>
+
+<fieldset style="border-radius: 15px;">
+	<legend><h1 style="font-size: 35px; font-family: sans-serif; color: black;" id="g2"><em>&nbsp;THRILLER & MYSTERY&nbsp;</em></h1></legend>
+
+    <div>
+    		<div class="book" style="margin-left: 20px;"><img src="https://agathachristie.imgix.net/hcuk-paperback/And-Then-There-Were-None.JPG?auto=compress,format&fit=clip&q=65&w=300" alt="" class="book-image">
+    			<div class="book-name">And Then There<br> Were None <a href="https://en.wikipedia.org/wiki/And_Then_There_Were_None" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 350.00</div>
+    		    <div class="quantity"><select name="copies" id="qty6">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    		
+    		<div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/41DeTbHegDL._AC_SX184_.jpg" alt="" class="book-image">
+    			<div class="book-name">Deadly Waters <a href="https://www.goodreads.com/en/book/show/48648641-deadly-waters" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 400.00</div>
+    		    <div class="quantity"><select name="copies" id="qty7">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/51ilojhjb+L._AC_SX184_.jpg" alt="" class="book-image">
+    			<div class="book-name">Deadlock <a href="https://www.goodreads.com/book/show/52768067-deadlock" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 1399.00</div>
+    		    <div class="quantity"><select name="copies" id="qty8">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/51dQ894qquL._AC_SX184_.jpg" alt="" class="book-image">
+    			<div class="book-name">Girl Gone Mad <a href="https://www.goodreads.com/book/show/51178033-girl-gone-mad" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 450.00</div>
+    		    <div class="quantity"><select name="copies" id="qty9">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/51IQ2ESJAHL._SX302_BO1,204,203,200_.jpg" alt="" class="book-image">
+    			<div class="book-name">Sherlock Holmes <br>Vol. 1 <a href="https://en.wikipedia.org/wiki/The_Fault_in_Our_Stars" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 260.00</div>
+    		    <div class="quantity"><select name="copies" id="qty10">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    </div>
+</fieldset><br><br>
+
+<fieldset style="border-radius: 15px;">
+	<legend><h1 style="font-size: 35px; font-family: sans-serif; color: black;" id="g3"><em>&nbsp;COMICS & GRAPHIC NOVELS&nbsp;</em></h1></legend>
+
+    <div>
+    		<div class="book" style="margin-left: 20px;"><img src="https://rukminim1.flixcart.com/image/416/416/k1nw9zk0/book/6/5/1/the-marvel-book-original-imafkg73pceyuy8f.jpeg?q=70" alt="" class="book-image">
+    			<div class="book-name">The Marvel <br>Book <a href="https://www.dk.com/uk/book/9780241357651-the-marvel-book/" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 999.00</div>
+    		    <div class="quantity"><select name="copies" id="qty11">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    		
+    		<div class="book"><img src="https://rukminim1.flixcart.com/image/416/416/k5y7tzk0/book/6/3/8/snug-original-imafzgrbqze77qze.jpeg?q=70" alt="" class="book-image">
+    			<div class="book-name">Snug <a href="https://www.goodreads.com/book/show/52278999-snug" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 370.00</div>
+    		    <div class="quantity"><select name="copies" id="qty12">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://rukminim1.flixcart.com/image/416/416/jp8ngcw0-1/book/1/9/5/adulthood-is-a-myth-original-imafbj6zzhgfatyt.jpeg?q=70" alt="" class="book-image">
+    			<div class="book-name">Adulthood Is<br> A Myth <a href="https://www.goodreads.com/book/show/25855506-adulthood-is-a-myth" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 450.00</div>
+    		    <div class="quantity"><select name="copies" id="qty13">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557878218l/28051013._SX318_.jpg" alt="" class="book-image">
+    			<div class="book-name">Diary Of A<br> Wimpy Kid <a href="https://wimpykid.com/books/book14/" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 410.00</div>
+    		    <div class="quantity"><select name="copies" id="qty14">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529034024l/38958846.jpg" alt="" class="book-image">
+    			<div class="book-name">Sheets <a href="https://www.goodreads.com/en/book/show/38958846-sheets" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 1150.00</div>
+    		    <div class="quantity"><select name="copies" id="qty15">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    </div>
+</fieldset><br><br>
+
+<fieldset style="border-radius: 15px;">
+	<legend><h1 style="font-size: 35px; font-family: sans-serif; color: black;" id="g4"><em>&nbsp;SELF-HELP BOOKS&nbsp;</em></h1></legend>
+
+    <div>
+    		<div class="book" style="margin-left: 20px;"><img src="https://images-na.ssl-images-amazon.com/images/I/41ZeUZZ+0XL._SY344_BO1,204,203,200_.jpg" alt="" class="book-image">
+    			<div class="book-name">The 5 AM Club <a href="https://www.goodreads.com/book/show/37502596-the-5-am-club" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 300.00</div>
+    		    <div class="quantity"><select name="copies" id="qty16">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    		
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463241782l/30186948._SY475_.jpg" alt="" class="book-image">
+    			<div class="book-name">Think And Grow<br>Rich <a href="https://www.goodreads.com/book/show/30186948-think-and-grow-rich" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 250.00</div>
+    		    <div class="quantity"><select name="copies" id="qty17">
+    		    	<option value="0">0</option> 
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591728338l/52529.jpg" alt="" class="book-image">
+    			<div class="book-name">The Secret <a href="https://www.goodreads.com/book/show/52529.The_Secret" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 550.00</div>
+    		    <div class="quantity"><select name="copies" id="qty18">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388639717l/4894.jpg" alt="" class="book-image">
+    			<div class="book-name">Who Moved My<br>Cheese? <a href="https://www.goodreads.com/book/show/4894.Who_Moved_My_Cheese_" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 500.00</div>
+    		    <div class="quantity"><select name="copies" id="qty19">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+
+    		<div class="book"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388211242l/69571.jpg" alt="" class="book-image">
+    			<div class="book-name">Rich Dad Poor<br>Dad <a href="https://www.goodreads.com/book/show/69571.Rich_Dad_Poor_Dad" class="info"><i class="fa fas fa-info-circle"></i></a></div>
+    		    <div class="price">₹ 399.00</div>
+    		    <div class="quantity"><select name="copies" id="qty20">
+    		    	<option value="0">0</option>
+    		    	<option value="1">1</option>
+    		    	<option value="2">2</option>
+    		    	<option value="3">3</option>
+    		    </select></div>
+    		</div>
+    </div>
+</fieldset><br><br>
+
+<div>
+	<div><img src="https://oppl.org/wp-content/uploads/2019/11/Books-Wrapped-With-a-Bow-800x400w.jpg" style="width: 520px; height: 220px; float: left; position: relative; right: -30px;"></div>
+	<div style="font-size: 23px; font-family: montserrat; float: left; position: relative; left: -250px; bottom: -50px;">&emsp;&emsp;&emsp;Is this a<br>&ensp;Gift for someone?<br><b style="font-size: 25px;">Gift Wrap It Now! <input type="checkbox" name="gift" id="checkbox" onclick="checkit()"></b>
+		<p id="text" style="display: none; position: relative; top: -15px; color: red; font-size: 20px;"><b>&emsp;&ensp;It Will Be A Gift!!</b></p>
+	</div>
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRPJ-Gw7CD80HTvjHmDJGWkosek5d5mEZuwDQ&usqp=CAU" style="width: 250px; height: 240px; float: left; position: relative; top: -20px; right: 140px;"></div>
+<div><button onclick="viewcart()" style="outline: none; border-radius: 100px; font-size: 25px; font-family: montserrat; padding: 10px 40px; position: relative; left:-80px; bottom: -85px; background-color: #99C6E9; cursor: pointer;"><b>VIEW CART</b></button></div>
+</div>
+
+<div id="cart" style="clear: both; font-family: montserrat; background-color: #DEFAF3;" align="center"></div>
+
+<div id="about" style="font-family: montserrat; clear: both; padding: 20px;">
+    <div align="center"><h1 style="font-size: 40px;">ABOUT US</h1></div>
+    <p style="font-size: 22px;" align="center">Wisdom Books is one of the largest trusted sites for buying books.</p>
+    <div align="center">
+    <div id="box" style="float: left;">
+        <i class="fa fas fa-users" style="font-size: 45px;"></i>
+        <h1>2 Million</h1>
+        <h3>Our Customers</h3>
+    </div>
+    <div id="box" style="float: left;">
+        <i class="fa fa-book" style="font-size: 45px;"></i>
+        <h1>4.2 Billion</h1>
+        <h3>Book Collections</h3>
+    </div>
+    <div id="box" style="float: left;">
+        <i class="fa fas fa-comments" style="font-size: 45px;"></i>
+        <h1>1.3 Million</h1>
+        <h3>Our Reviews</h3>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</div><br><br>
+
+<div id="contact" style="clear: both; background-color: black; color: white; font-family: montserrat; padding: 15px 20px;">
+	<div align="center"><h1 style="font-size: 40px;">CONTACT US</h1></div><br><br>
+    <div>
+	<table style="border-spacing: 130px 0px;">
+     <tr>
+         <td align="center">
+            <i class="fa fas fa-map-marker" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">Visit Us</h3>
+            Wisdom Books<br>ABC Road,<br>Chandigarh (160091)<br>India 
+         </td>
+         <td align="center">
+            <i class="fa fas fa-phone" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">Call Us</h3>
+            0172-123-456<br>98765-43210 
+         </td>
+         <td align="center">
+            <i class="fa fas fa-envelope-open" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">For Any Queries</h3>
+            queries@wisdombooks.com 
+         </td>
+         <td align="center" id="social">
+            <i class="fa fa-facebook"></i><br>
+            <i class="fa fa-instagram"></i><br>
+            <i class="fa fa-twitter"></i>
+         </td>
+     </tr>   
+    </table>
+</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

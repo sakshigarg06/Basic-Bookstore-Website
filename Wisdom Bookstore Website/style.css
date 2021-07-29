@@ -1,0 +1,228 @@
+#table1{
+	background-color: white;
+	border-collapse: collapse;
+    width: 100%;
+    height: 80%;
+}
+    th{
+	padding: 20px;
+	font-size: 20px;
+}
+
+form.search input[type=text]{
+	padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  position: relative;
+  bottom: -10px;
+  margin:auto;
+  width: 26%;
+  background: #f1f1f1;
+  border-radius: 20px;
+  outline: none;
+}
+
+form.search button {
+  float: left;
+  width: 4%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  position: relative;
+  bottom: -10px;
+  left: -30px;
+  border: 1px solid grey;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+#dropdown-content{
+	display: none;
+}
+
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdown-content a:hover {background-color: #f1f1f1}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+.book-image{
+	width: 180px;
+	height: 250px;
+}
+
+.book-image:hover{
+	box-shadow: 5px 5px #D0D2D5;
+}
+
+.book-name{
+	margin-top: 6px;
+	font-size: 22px;
+	font-family: montserrat;
+	font-weight: bold;
+}
+
+.info{
+	font-size: 18px;
+}
+
+.price{
+	margin-top: 6px;
+	font-size: 16px;
+	font-family: montserrat;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.quantity{
+	position: relative;
+	bottom: -6px;
+	right: -20px;
+}
+
+.book{
+	float: left;
+	margin-right: 55px;
+}
+
+select[name="copies"]{
+	width: 45px;
+	height: 25px;
+  outline: none;
+  border-color: transparent;
+  background-color: #E5E7E9;
+  font-family: montserrat;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#checkbox{
+  outline: none;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.form{
+  background:#DEFAF3;;
+  color: #000;
+  position: relative;
+  float: left;
+  left: 200px;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 100px;
+}
+
+.form p{
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form input[type="text"], input[type="date"], input[type="email"]
+{
+  margin-bottom: 26px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  height: 30px;
+  color: black;
+  font-size: 15px;
+  width: 100%;
+}
+
+.form input[type="radio"]
+{
+  margin-bottom: 16px;
+}
+
+.form input[type="submit"]
+{
+  outline: none;
+  border-radius: 100px;
+  font-size: 25px;
+  font-family: montserrat;
+  padding: 10px 45px;
+  background-color: #99C6E9; 
+  cursor: pointer; 
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+#choose{
+      position: relative;
+      right: -260px;
+      font-family: montserrat;
+    }
+
+    #pay td{
+      font-size: 20px;
+      padding: 16px 35px;
+      text-align: center;
+      font-weight: bold;
+      background-color: #F8F9F9;
+      font-family: montserrat;
+    }
+
+    #pay td:hover{
+      background-color: #FEC7C5;
+      cursor: pointer;
+    }
+
+    .mode {
+      box-sizing: border-box; 
+      padding: 15px 40px; 
+      background: #FEC7C5; 
+      position: relative; 
+      float: right;
+      display: none;
+      left: -165px;
+      bottom: -110px;
+      outline: black;
+      font-family: montserrat;
+    }
+
+    .mode input[type="submit"]{
+      outline: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: montserrat;
+    }
+
+#box{
+  padding: 20px 40px;
+  background-color: #F8F8F8;
+  color: #1B8BCC;
+  box-shadow: 0px 3px 7px 0px;
+  margin: 20px 85px;
+}
+
+#social i{
+  font-size: 40px;
+  color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

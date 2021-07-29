@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisdom Books</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body>
+
+	<div style="text-align: center; background-color: #262626; color: white; padding: 5px; font-family: montserrat; left: 0px; font-size: 15px; width: 100%; height: auto; box-sizing: border-box; position: absolute; top: 0px;">Free Shipping for orders over ₹ 999.00!</div><br><br><br>
+
+<div style="margin: auto;">
+	<a href="index.html"><img src="https://cdn.dribbble.com/users/963371/screenshots/3994727/w-logo.png" alt="" style="width: 60px; height: 60px; margin-left: 20px; float: left;"></a>
+	<a href="index.html"><h1 style="font-family: montserrat; position: relative; top: -9px; float: left; color: black;">&ensp;WISDOM BOOKS&emsp;&emsp;</h1></a>
+	<form class="search">
+	<input type="text" placeholder="Search..">
+	<button onclick="location.href='index.html'"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -60px; bottom: -18px;"><b><a href="index.html" style="text-decoration: none; color: black;">HOME</a></b></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -90px; bottom: -18px;"><b><a href="#about" style="text-decoration: none; color: black;">ABOUT</a></b></div>
+
+<div  style="font-size: 20px; font-family: montserrat; float: left; position: relative;right: -115px; bottom: -18px;"><b><a href="#contact" style="text-decoration: none; color: black;">CONTACT</a></b></div>
+<br><br><br><br><br><br><br>
+
+<div style="float: left;" id="choose">
+		<h2 style="font-size: 30px; padding: 12px 30px; background-color: black; color: white; border-radius: 30px; outline: none;" align="center">Choose Payment Mode:</h2>
+		<table id="pay" border="1" style="border-collapse: collapse;">
+			<tr>
+				<td id="cod"><span onclick="cod();">CASH ON DELIVERY</span></td>
+			</tr>
+			<tr>
+				<td id="cc"><span onclick="opencredit();">CREDIT/DEBIT CARD</span></td>
+			</tr>
+			<tr>
+				<td id="paytm"><span onclick="openpay();">PAYTM/GOOGLE PAY/BHIM-UPI</span></td>
+			</tr>
+			<tr>
+				<td id="bank"><span onclick="netbanking();">NET BANKING</span></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="credit" class="mode" style=" z-index: 1;">
+		<form onsubmit="return ordered();">
+		<table>
+			<tr>
+				<td>
+					<h2>CREDIT/DEBIT CARD</h2>
+		            <hr>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Card Number*</p>
+					<input type="text" maxlength="12" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Card Holder*</p>
+					<input type="text" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Expiry Month*</p>
+					<select required>
+						<option></option>
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+						<option>06</option>
+						<option>07</option>
+						<option>08</option>
+						<option>09</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+					</select>
+				</td>
+				<td>
+					<p>Expiry Year*</p>
+					<select required>
+						<option></option>
+						<option>2021</option>
+						<option>2022</option>
+						<option>2023</option>
+						<option>2024</option>
+						<option>2025</option>
+						<option>2026</option>
+						<option>2027</option>
+						<option>2028</option>
+						<option>2029</option>
+						<option>2030</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>CVV*</p>
+					<input type="text" maxlength="3" required>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="PAY NOW">
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+
+	<div class="mode" id="gpay">
+		<form onsubmit="return ordered();">
+		<table>
+			<tr>
+				<td>
+					<h2>PAYTM/ GOOGLE PAY/ BHIM-<br>UPI</h2>
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="pay">&emsp;Paytm
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="pay">&emsp;Google Pay
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="pay">&emsp;Other UPI
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="PAY NOW">
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+
+	<div class="mode" id="net">
+		<form onsubmit="return ordered();">
+			<table>
+				<tr>
+					<td>
+						<h2>NET BANKING</h2>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select required style="outline: none; width: 100%; padding: 8px;">
+							<option>Select Your Bank</option>
+							<option>Axis Bank</option>
+							<option>HDFC Bank</option>
+							<option>ICICI Bank</option>
+							<option>Kotak Mahindra Bank</option>
+							<option>SBI</option>
+							<option>YES Bank</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style="font-size: 13px;">
+						We will redirect you to your bank website to authorise<br>the payment.
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="PAY NOW">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div class="mode" id="ondel">
+		<form onsubmit="return ordered();">
+			<table>
+				<tr>
+					<td>
+						<h2 style="font-size: 22px;">Now you can pay us on delivery.</h2>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="https://icon-library.com/images/cash-on-delivery-icon/cash-on-delivery-icon-14.jpg">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="SUBMIT">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+<div style="clear: both;"></div><br><br><br><br><br><br>
+
+<div id="about" style="font-family: montserrat; clear: both; padding: 20px;">
+	<div align="center"><h1 style="font-size: 40px;">ABOUT US</h1></div>
+	<p style="font-size: 22px;" align="center">Wisdom Books is one of the largest trusted sites for buying books.</p>
+	<div align="center">
+	<div id="box" style="float: left;">
+	    <i class="fa fas fa-users" style="font-size: 45px;"></i>
+		<h1>2 Million</h1>
+		<h3>Our Customers</h3>
+	</div>
+	<div id="box" style="float: left;">
+		<i class="fa fa-book" style="font-size: 45px;"></i>
+		<h1>4.2 Billion</h1>
+		<h3>Book Collections</h3>
+	</div>
+	<div id="box" style="float: left;">
+		<i class="fa fas fa-comments" style="font-size: 45px;"></i>
+		<h1>1.3 Million</h1>
+		<h3>Our Reviews</h3>
+	</div>
+	<div style="clear: both;"></div>
+</div>
+</div><br><br>
+
+<div id="contact" style="clear: both; background-color: black; color: white; font-family: montserrat; padding: 15px 20px;">
+	<div align="center"><h1 style="font-size: 40px;">CONTACT US</h1></div><br><br>
+    <div>
+	<table style="border-spacing: 130px 0px;">
+     <tr>
+         <td align="center">
+            <i class="fa fas fa-map-marker" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">Visit Us</h3>
+            Wisdom Books<br>ABC Road,<br>Chandigarh (160091)<br>India 
+         </td>
+         <td align="center">
+            <i class="fa fas fa-phone" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">Call Us</h3>
+            0172-123-456<br>98765-43210 
+         </td>
+         <td align="center">
+            <i class="fa fas fa-envelope-open" style="color: white; font-size: 40px;"></i>
+            <h3 style="font-size: 25px;">For Any Queries</h3>
+            queries@wisdombooks.com 
+         </td>
+         <td align="center" id="social">
+            <i class="fa fa-facebook"></i><br>
+            <i class="fa fa-instagram"></i><br>
+            <i class="fa fa-twitter"></i>
+         </td>
+     </tr>   
+    </table>
+</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
